@@ -134,13 +134,13 @@ class DeduplicatorApp:
             elif columns: combo.current(0)
         
         # 智能默认选择 - 合并模式
-        set_default(self.merge_col1_combo, "院代", 0)
-        set_default(self.merge_col2_combo, "代号", 1)
+        set_default(self.merge_col1_combo, "院校", 0)
+        set_default(self.merge_col2_combo, "专业", 1)
         set_default(self.merge_report1_combo, "院校名称", 0)
         set_default(self.merge_report2_combo, "专业名称", 4)
         
         # 智能默认选择 - 不合并模式
-        set_default(self.non_merge_key_combo, "金榜题名", 3)
+        set_default(self.non_merge_key_combo, "专业代码", 3)
         set_default(self.non_merge_report1_combo, None, 0) # 默认为第一列
         set_default(self.non_merge_report2_combo, None, 1) # 默认为第二列
 
